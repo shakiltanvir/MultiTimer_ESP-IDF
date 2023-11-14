@@ -8,11 +8,13 @@
 This is the simplest buildable example. The example is used by command `idf.py create-project`
 that copies the project to user specified path and set it's name. For more information follow the [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project)
 
+## Overview
+This ESP32 project demonstrates a real-time counter system utilizing FreeRTOS tasks and the General-Purpose Timer (GPTimer) module. The project showcases how to manage concurrent tasks and hardware timers for precise counting operations in an embedded system.
 
-
-## How to use example
-We encourage the users to use the example as a template for the new projects.
-A recommended way is to follow the instructions on a [docs page](https://docs.espressif.com/projects/esp-idf/en/latest/api-guides/build-system.html#start-a-new-project).
+## Fetures
+Two FreeRTOS tasks increment counters at different intervals.
+GPTimer triggers a callback function, incrementing a counter every millisecond.
+FreeRTOS tasks and GPTimer operate concurrently, demonstrating real-time synchronization.
 
 ## Example folder contents
 
@@ -33,3 +35,12 @@ Below is short explanation of remaining files in the project folder.
 ```
 Additionally, the sample project contains Makefile and component.mk files, used for the legacy Make based build system. 
 They are not used or needed when building with CMake and idf.py.
+## 1.GPTimer Counters:
+Two GPTimers are configured to generate periodic alarms at intervals of 500 ms and 1000 ms, respectively.
+GPTimer 0 is associated with counter_0.
+GPTimer 1 is associated with counter_1.
+The GPTimer alarms increment their respective counters.
+## 2.FreeRTOS Tasks:
+Two FreeRTOS tasks (Task1 and Task2) increment counter_2 and counter_3 at intervals of 1000 ms and 500 ms, respectively.
+## 3.Logging:
+The counters' values are periodically printed to the console every second.
