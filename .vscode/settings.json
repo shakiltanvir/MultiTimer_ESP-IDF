@@ -1,0 +1,9 @@
+{
+    "idf.adapterTargetName": "esp32",
+    "idf.portWin": "COM6",
+    "idf.flashType": "UART",
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "freertos.h": "c"
+    }
+}

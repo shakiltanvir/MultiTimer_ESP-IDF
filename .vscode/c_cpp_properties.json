@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel-SMP/include",
+                "C:/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/FreeRTOS-Kernel-SMP/portable/riscv/include/freertos",
+                "C:/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/esp_additions/include/freertos",
+                "C:/Espressif/frameworks/esp-idf-v5.1.1/components/driver/gptimer/include",
+                "C:/Espressif/frameworks/esp-idf-v5.1.1/components/log/include",
+                "C:/Espressif/frameworks/esp-idf-v5.1.1/components/freertos/esp_additions/arch/linux/include",
+                "C:/Espressif/frameworks/esp-idf-v5.1.1/components/esp_hw_support/include"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}
