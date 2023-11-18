@@ -5,11 +5,13 @@
 
 static const char *TAG = "custom_timer";
 
+
 static gptimer_handle_t gptimer = NULL;
 static int counter_0 = 0; // Remove volatile
 static int counter_1 = 0; // Remove volatile
 static int counter_2 = 0; // Remove volatile
 static int counter_3 = 0; // Remove volatile
+//static int counter_4 = 0; // Remove volatile
 
 
 

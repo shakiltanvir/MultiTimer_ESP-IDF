@@ -4,6 +4,7 @@
     "idf.flashType": "UART",
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
-        "freertos.h": "c"
+        "freertos.h": "c",
+        "esp_log.h": "c"
     }
 }
